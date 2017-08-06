@@ -43,6 +43,32 @@ Method | Description
 ```int	size()``` | Trả về số phần tử có trong danh sách
 ```E remove(int index)``` | Xoá phần tử tại vị trí đã chọn
 
+### boolean add(Object o)
+Thêm phần tử được chỉ định vào cuối danh sách
+```java
+ArrayList<String> list = new ArrayList<>();
+// 1. boolean add(Object o)
+list.add("Lan");
+list.add("Hoa");
+list.add("Nam");
+System.out.println(list); // [Lan, Hoa, Nam]
+```
+### void add(int index, Object element)
+Thêm phần tử vào vị trí được chỉ định trong danh sách
+```java
+ArrayList<String> list = new ArrayList<>();
+list.add("Lan");
+list.add("Hoa");
+list.add("Nam");
+// 2. void add(int index, Object element)
+list.add(1, "Son");
+System.out.println(list); // [Lan, Son, Hoa, Nam]
+```
+### boolean addAll(Collection c)
+Thêm tất cả các phần tử trong Collection vào cuối danh sách
+
+
+
 Đây chỉ là những metho cơ bản của ArrayList để biết thêm truy cập [docs](http://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html)
 
 ## Example
