@@ -19,19 +19,15 @@ Constructor | Description
 
 Example:
 ```java
-public class ArrayListTest {
-	public static void main(String[] args) {
-		// 1.ArrayList()
-		ArrayList list1 = new ArrayList<>();
-	
-		// 2.ArrayList(Collection c)
-		ArrayList<String> dummyList = new ArrayList<>(Arrays.asList("Nam", "Minh", "Hoa"));
-		ArrayList<String> list2 = new ArrayList<>(dummyList);
-	
-		// 3.ArrayList(int capacity)
-		ArrayList list3 = new ArrayList<>(20);
-	}
-}
+// 1.ArrayList()
+ArrayList list1 = new ArrayList<>();
+
+// 2.ArrayList(Collection c)
+ArrayList<String> dummyList = new ArrayList<>(Arrays.asList("Nam", "Minh", "Hoa"));
+ArrayList<String> list2 = new ArrayList<>(dummyList);
+
+// 3.ArrayList(int capacity)
+ArrayList list3 = new ArrayList<>(20);
 ```
 
 ## Method cơ bản trong ArrayList 
