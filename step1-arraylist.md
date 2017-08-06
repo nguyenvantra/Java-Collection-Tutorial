@@ -165,7 +165,9 @@ arraylistobject.size();
 
 ## References
 [1. http://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html](http://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html)
+
 [2. http://javahungry.blogspot.com/2015/03/difference-between-array-and-arraylist-in-java-example.html](http://javahungry.blogspot.com/2015/03/difference-between-array-and-arraylist-in-java-example.html)
+
 [3. http://www.geeksforgeeks.org/arraylist-in-java/](http://www.geeksforgeeks.org/arraylist-in-java/)
 
 
