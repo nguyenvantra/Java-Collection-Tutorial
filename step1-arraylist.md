@@ -17,6 +17,19 @@ Constructor | Description
 ```ArrayList(Collection c)``` | Sử dụng khởi tạo ArrayList với các phần tử của Collection c
 ```ArrayList(int capacity)``` | Sử dụng khởi tạo ArrayList với kích thước cho trước
 
+Example:
+```java
+// 1.ArrayList()
+ArrayList list1 = new ArrayList<>();
+
+// 2.ArrayList(Collection c)
+ArrayList<String> dummyList = new ArrayList<>(Arrays.asList("Nam", "Minh", "Hoa"));
+ArrayList<String> list2 = new ArrayList<>(dummyList);
+
+// 3.ArrayList(int capacity)
+ArrayList list3 = new ArrayList<>(20);
+```
+
 ## Method cơ bản trong ArrayList 
 Method | Description
 ------------ | -------------
@@ -159,7 +172,7 @@ arraylistobject.size();
 - Array và ArrayList đều cho phép dữ liệu trùng lặp.
 
 #### Null Values
-- Array và ArrayList có thể lưu giá trị **null** và sử dụng **index** để chỉ ra các phần tử.
+- Array và ArrayList có thể lưu giá trị **null** và sử dụng **index** để duyệt các phần tử.
 
 #### Unordered
 
