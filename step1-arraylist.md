@@ -89,7 +89,7 @@ public class ArrayListTest {
 
 ```
 ## So sánh Array và ArrayList
-### Những điểm khác biệt giữa **Array** và **ArrayList**
+### 1.Những điểm khác biệt giữa **Array** và **ArrayList**
 
 #### Resizable
 - **Array**: Array is static in size, có nghĩa là **Array** có kích thước chiều dài cố định, không thể thay đổi kích thước array sau khi tạo đối tượng.
@@ -150,7 +150,7 @@ arraylistobject.add(12);
 arraylistobject.size(); 
 ```
 
-### Những điểm giống nhau giữa **Array** và **ArrayList**
+### 2.Những điểm giống nhau giữa **Array** và **ArrayList**
 
 #### add and get method
 - **Performance** của Array và ArrayList tương đồng nhau khi thực hiện **add** và **get** operations.
