@@ -218,7 +218,7 @@ arraylistobject.size();
 ### 2.Những điểm giống nhau giữa **Array** và **ArrayList**
 
 #### add() and get() method
-- **Performance** của Array và ArrayList tương đồng nhau khi thực hiện **add** và **get** operations.
+- **Performance** của Array và ArrayList tương đồng nhau khi thực hiện **add()** và **get()** operations.
 
 #### Duplicate elements
 - Array và ArrayList đều cho phép dữ liệu trùng lặp.
