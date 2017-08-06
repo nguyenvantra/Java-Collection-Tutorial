@@ -5,48 +5,62 @@ import java.util.Arrays;
 
 public class ArrayListTest {
 	public static void main(String[] args) {
+		// 1.ArrayList()
+		ArrayList list1 = new ArrayList<>();
+
+		// 2.ArrayList(Collection c)
+		ArrayList<String> dummyList = new ArrayList<>(Arrays.asList("Minh", "Xuan"));
+		ArrayList<String> list2 = new ArrayList<>(dummyList);
+
+		// 3.ArrayList(int capacity)
+		ArrayList list3 = new ArrayList<>(20);
+
 		/*
-		 * initial array list
+		 * All method in ArrayList
 		 */
-		
-		// Constructs an empty list
-		ArrayList list1 = new ArrayList();
+		ArrayList<String> list = new ArrayList<>();
+		// 1. boolean add(Object o)
+		list.add("Lan");
+		list.add("Hoa");
+		list.add("Nam");
 
-		// Constructs an empty list with the specified initial capacity.
-		ArrayList list2 = new ArrayList(10);
+		// 2. void add(int index, Object element)
+		// list.add(1, "Son");
 
-		// Constructs a list containing the elements of the specified
-		// collection.
-		ArrayList<Integer> list3 = new ArrayList<>();
+		// 3. boolean addAll(Collection c)
+		// list.addAll(dummyList);
 
-		ArrayList<String> dummyList = new ArrayList<>(Arrays.asList("Nam", "Minh", "Hoa"));
+		// 4. boolean addAll(int index, Collection c)
+		// list.addAll(1, dummyList);
 
-		// Add element
-		dummyList.add("Long");
+		// 5. void clear()
+		// list.clear();
 
-		// Inserts the specified element at the specified position in this list
-		dummyList.add(2, "Phong");
+		// 6. Object clone()
+		// ArrayList<String> listClone = new ArrayList<>(dummyList.size());
+		// listClone = (ArrayList<String>) dummyList.clone();
+		// System.out.println(listClone);
 
-		// Appends all of the elements in the specified collection to the end of this list
-		ArrayList<String> testList = new ArrayList<>(Arrays.asList("Thu", "Song", "Ha"));
-		dummyList.addAll(testList);
+		// 7.boolean contains(Object o)
+		// list.contains("Darkness");
+		// list.contains("Hoa");
 
-		// Inserts all of the elements in the specified collection into this list, starting at the specified position
-		dummyList.addAll(2, testList);
-		
-		// Removes the element at the specified position in this list.
-		dummyList.remove(1);
-		
-		for (int i = 0; i < dummyList.size(); i++) {
-			// Returns the element at the specified position in this list.
-			System.out.println(dummyList.get(i));
+		// 8.Object get(int index)
+		// list.get(1);
+
+		// 9.Object remove(int index)
+		// list.remove(1);
+
+		// 10.int size()
+		// list.size();
+
+		// 11.Object[] toArray()
+		Object[] ob = list.toArray();
+		for (Object value : ob) {
+			System.out.println(value);
 		}
-		
-		// clear list
-		dummyList.clear();
-		
-		// Check list empty
-		dummyList.isEmpty();
+
+		System.out.println(list);
 
 	}
 }
