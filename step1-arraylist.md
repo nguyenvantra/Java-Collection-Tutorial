@@ -135,3 +135,31 @@ addarrayobject[0][0]= new Integer(8);
 ```
 - **ArrayList**: không cho phép.
 
+### Length
+- **Array**: sử dụng **length variable** trả về chiều dài của **Array**.
+
+```java
+Integer arrayobject[] = new Integer[3];
+arraylength= arrayobject.length   ; 
+```
+- **ArrayList**: sử dụng **size() method**.
+
+```java
+ArrayList  arraylistobject = new ArrayList();
+arraylistobject.add(12); 
+arraylistobject.size(); 
+```
+
+Những điểm giống nhau giữa **Array** và **ArrayList**
+
+### add and get method
+- **Performance** của Array và ArrayList tương đồng nhau khi thực hiện **add** và **get** operations.
+
+### Duplicate elements
+- Array và ArrayList đều cho phép dữ liệu trùng lặp.
+
+### Null Values
+- Array và ArrayList có thể lưu giá trị **null** và sử dụng **index** để chỉ ra các phần tử.
+
+### Unordered
+
