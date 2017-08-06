@@ -2,7 +2,7 @@
 
 ArrayList là một phần trong **Java Collection Framework** và thuộc package **java.util**. Nó cung cấp cho chúng ta **dynamic arrays** trong Java. Măc dù nó có thể chậm hơn so với **array** nhưng nó vẫn có những ưu điểm khi làm việc với mảng.
 
-## Những điểm quan trong trong ArrayList
+## Những điểm quan trọng trong ArrayList
 - ArrayList kế thừa **AbstractList class** và implements **List interface**.
 - Có thể khởi tạo ArrayList với kích thước cố định nhưng kích thước của ArrayList có thể **tăng lên** hoặc **thu hẹp** lại phụ thuộc vào cách thực thi trong ArrayList.
 - Có thể chứa các phần tử trùng nhau.
@@ -138,8 +138,20 @@ list.add("Nam");
 // 10. int size()
 list.size(); // 3
 ```
-
-Đây chỉ là những metho cơ bản của ArrayList để biết thêm truy cập [docs](http://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html)
+### 11. Object[] toArray()
+Trả về một mảng bao gồm các đối tượng có trong danh sách với thứ tự tương ứng
+```java
+ArrayList<String> list = new ArrayList<>();
+list.add("Lan");
+list.add("Hoa");
+list.add("Nam");
+// 11.Object[] toArray()
+Object[] ob = list.toArray();
+for (Object value : ob) {
+	System.out.println(value); // Lan Hoa Nam
+}
+```
+Đây chỉ là những method cơ bản của ArrayList để biết thêm truy cập [docs](http://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html)
 
 ## So sánh Array và ArrayList
 ### 1.Những điểm khác biệt giữa **Array** và **ArrayList**
@@ -205,7 +217,7 @@ arraylistobject.size();
 
 ### 2.Những điểm giống nhau giữa **Array** và **ArrayList**
 
-#### add and get method
+#### add() and get() method
 - **Performance** của Array và ArrayList tương đồng nhau khi thực hiện **add** và **get** operations.
 
 #### Duplicate elements
