@@ -1,6 +1,6 @@
 # ArrayList
 
-ArrayList là một phần trong **Java Collection Framwork** và thuộc package **java.util**. Nó cung cấp cho chúng ta **dynamic arrays** trong Java. Măc dù nó có thể chậm hơn so với **array** nhưng nó vẫn có những ưu điểm khi làm việc với mảng.
+ArrayList là một phần trong **Java Collection Framework** và thuộc package **java.util**. Nó cung cấp cho chúng ta **dynamic arrays** trong Java. Măc dù nó có thể chậm hơn so với **array** nhưng nó vẫn có những ưu điểm khi làm việc với mảng.
 
 ## Những điểm quan trong trong ArrayList
 - ArrayList kế thừa **AbstractList class** và implements **List interface**.
@@ -89,4 +89,49 @@ public class ArrayListTest {
 
 ```
 ## So sánh Array và ArrayList
+Những điểm khác biệt giữa **Array** và **ArrayList**
+
+### Resizable
+- **Array**: Array is static in size, có nghĩa là **Array** có kích thước chiều dài cố định, không thể thay đổi kích thước array sau khi tạo đối tượng.
+- **ArrayList**: ArrayList is dynamic in size, có nghĩa là không bị cố định kích thước có thể mở rộng hoặc thu hẹp.
+
+### Performance
+Hiệu suất của array và arrayList phụ thuộc vào **operation**(hoạt động) mà nó thực hiện.
+- **resize() opertation**: Tự động thay đổi kích thước trong **ArrayList** sẽ làm chậm hiệu suất vì nó sẽ sử dụng mảng tạm thời để sao chép các phần tử từ mảng cũ sang mảng mới
+- **add() or get() operation**: Thêm một phần tử hoặc lấy ra một phần tử từ **Array** và **ArrayList** có hiệu xuất gần giống nhau.
+
+### Primitives
+- **Array**: có thể chứa kiểu dữ liệu nguyên thuỷ cũng như đối tượng.
+- **ArrayList**: không thể chứa kiểu dữ liệu nguyên thuỷ.
+
+Xem ví dụ sau:
+```java
+ArrayList  arraylistobject = new ArrayList();
+arraylistobject.add(23);
+```
+Đừng nhầm tưởng **ArrayList** sẻ thêm được kiểu dữ liệu nguyên thuỷ nhưng thực ra **JVM** thông qua **Autoboxing** chuyển đổi kiểu dữ liệu **int** thành một đối tượng **Integer**.
+
+```java
+ArrayList  arraylistobject = new ArrayList();
+arraylistobject.add(new Integer(23));
+```
+
+### Type-Safety
+- **Array**: Array là một cấu trúc dữ liệu đồng nhất do đó nó sẽ chứa một đối tượng cụ thể hoặc một kiểu dữ liệu nguyên thuỷ cụ thể. Nếu bạn cố gắn lưu trữ kiểu dữ liệu khác nhau thì nó sẽ ném ra **ArrayStoreException**. Vậy **Array** không sử dụng **Generics**.
+
+```java
+String temp[] =  new String[2];  // creates a string array of size 2
+temp[0] = new Integer(12); // throws ArrayStoreException, trying to add Integer object in String[] 
+```
+
+- **ArrayList**: Sử dụng **Generics** để đảm bảo kiểu dự liệu an toàn.
+
+### Multi-dimensional
+- **Array**: cho phép.
+
+```java
+Integer addarrayobject[][] = new Integer[3][2];
+addarrayobject[0][0]= new Integer(8);
+```
+- **ArrayList**: không cho phép.
 
