@@ -23,7 +23,7 @@ Example:
 ArrayList list1 = new ArrayList<>();
 
 // 2.ArrayList(Collection c)
-ArrayList<String> dummyList = new ArrayList<>(Arrays.asList("Nam", "Minh", "Hoa"));
+ArrayList<String> dummyList = new ArrayList<>(Arrays.asList("Minh", "Xuan"));
 ArrayList<String> list2 = new ArrayList<>(dummyList);
 
 // 3.ArrayList(int capacity)
@@ -54,7 +54,7 @@ list.add("Nam");
 System.out.println(list); // [Lan, Hoa, Nam]
 ```
 ### void add(int index, Object element)
-Thêm phần tử vào vị trí được chỉ định trong danh sách
+Thêm phần tử chỉ định vào vị trí được chỉ định trong danh sách
 ```java
 ArrayList<String> list = new ArrayList<>();
 list.add("Lan");
@@ -66,7 +66,28 @@ System.out.println(list); // [Lan, Son, Hoa, Nam]
 ```
 ### boolean addAll(Collection c)
 Thêm tất cả các phần tử trong Collection vào cuối danh sách
-
+```java
+ArrayList<String> list = new ArrayList<>();
+ArrayList<String> dummyList = new ArrayList<>(Arrays.asList("Minh", "Xuan"));
+list.add("Lan");
+list.add("Hoa");
+list.add("Nam");
+// 3. boolean addAll(Collection c)
+list.addAll(dummyList);
+System.out.println(list); // [Lan, Hoa, Nam, Minh, Xuan]
+```
+### boolean addAll(int index, Collection c)
+Thêm tất cả các phần tử trong Collection vào vị trí được chỉ định
+```java
+ArrayList<String> list = new ArrayList<>();
+ArrayList<String> dummyList = new ArrayList<>(Arrays.asList("Minh", "Xuan"));
+list.add("Lan");
+list.add("Hoa");
+list.add("Nam");
+// 4. boolean addAll(int index, Collection c)
+list.addAll(1, dummyList);
+System.out.println(list); // [Lan, Minh, Xuan, Hoa, Nam]
+```
 
 
 Đây chỉ là những metho cơ bản của ArrayList để biết thêm truy cập [docs](http://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html)
