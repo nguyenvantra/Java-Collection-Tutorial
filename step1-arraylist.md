@@ -89,18 +89,18 @@ public class ArrayListTest {
 
 ```
 ## So sánh Array và ArrayList
-Những điểm khác biệt giữa **Array** và **ArrayList**
+### Những điểm khác biệt giữa **Array** và **ArrayList**
 
-### Resizable
+#### Resizable
 - **Array**: Array is static in size, có nghĩa là **Array** có kích thước chiều dài cố định, không thể thay đổi kích thước array sau khi tạo đối tượng.
 - **ArrayList**: ArrayList is dynamic in size, có nghĩa là không bị cố định kích thước có thể mở rộng hoặc thu hẹp.
 
-### Performance
+#### Performance
 Hiệu suất của array và arrayList phụ thuộc vào **operation**(hoạt động) mà nó thực hiện.
 - **resize() opertation**: Tự động thay đổi kích thước trong **ArrayList** sẽ làm chậm hiệu suất vì nó sẽ sử dụng mảng tạm thời để sao chép các phần tử từ mảng cũ sang mảng mới
 - **add() or get() operation**: Thêm một phần tử hoặc lấy ra một phần tử từ **Array** và **ArrayList** có hiệu xuất gần giống nhau.
 
-### Primitives
+#### Primitives
 - **Array**: có thể chứa kiểu dữ liệu nguyên thuỷ cũng như đối tượng.
 - **ArrayList**: không thể chứa kiểu dữ liệu nguyên thuỷ.
 
@@ -116,7 +116,7 @@ ArrayList  arraylistobject = new ArrayList();
 arraylistobject.add(new Integer(23));
 ```
 
-### Type-Safety
+#### Type-Safety
 - **Array**: Array là một cấu trúc dữ liệu đồng nhất do đó nó sẽ chứa một đối tượng cụ thể hoặc một kiểu dữ liệu nguyên thuỷ cụ thể. Nếu bạn cố gắn lưu trữ kiểu dữ liệu khác nhau thì nó sẽ ném ra **ArrayStoreException**. Vậy **Array** không sử dụng **Generics**.
 
 ```java
@@ -126,7 +126,7 @@ temp[0] = new Integer(12); // throws ArrayStoreException, trying to add Integer 
 
 - **ArrayList**: Sử dụng **Generics** để đảm bảo kiểu dự liệu an toàn.
 
-### Multi-dimensional
+#### Multi-dimensional
 - **Array**: cho phép.
 
 ```java
@@ -135,7 +135,7 @@ addarrayobject[0][0]= new Integer(8);
 ```
 - **ArrayList**: không cho phép.
 
-### Length
+#### Length
 - **Array**: sử dụng **length variable** trả về chiều dài của **Array**.
 
 ```java
@@ -150,16 +150,16 @@ arraylistobject.add(12);
 arraylistobject.size(); 
 ```
 
-Những điểm giống nhau giữa **Array** và **ArrayList**
+### Những điểm giống nhau giữa **Array** và **ArrayList**
 
-### add and get method
+#### add and get method
 - **Performance** của Array và ArrayList tương đồng nhau khi thực hiện **add** và **get** operations.
 
-### Duplicate elements
+#### Duplicate elements
 - Array và ArrayList đều cho phép dữ liệu trùng lặp.
 
-### Null Values
+#### Null Values
 - Array và ArrayList có thể lưu giá trị **null** và sử dụng **index** để chỉ ra các phần tử.
 
-### Unordered
+#### Unordered
 
