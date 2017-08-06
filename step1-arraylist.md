@@ -43,7 +43,7 @@ Method | Description
 ```int	size()``` | Trả về số phần tử có trong danh sách
 ```E remove(int index)``` | Xoá phần tử tại vị trí đã chọn
 
-### boolean add(Object o)
+### 1. boolean add(Object o)
 Thêm phần tử được chỉ định vào cuối danh sách
 ```java
 ArrayList<String> list = new ArrayList<>();
@@ -53,7 +53,7 @@ list.add("Hoa");
 list.add("Nam");
 System.out.println(list); // [Lan, Hoa, Nam]
 ```
-### void add(int index, Object element)
+### 2. void add(int index, Object element)
 Thêm phần tử chỉ định vào vị trí được chỉ định trong danh sách
 ```java
 ArrayList<String> list = new ArrayList<>();
@@ -64,7 +64,7 @@ list.add("Nam");
 list.add(1, "Son");
 System.out.println(list); // [Lan, Son, Hoa, Nam]
 ```
-### boolean addAll(Collection c)
+### 3. boolean addAll(Collection c)
 Thêm tất cả các phần tử trong Collection vào cuối danh sách
 ```java
 ArrayList<String> list = new ArrayList<>();
@@ -76,7 +76,7 @@ list.add("Nam");
 list.addAll(dummyList);
 System.out.println(list); // [Lan, Hoa, Nam, Minh, Xuan]
 ```
-### boolean addAll(int index, Collection c)
+### 4. boolean addAll(int index, Collection c)
 Thêm tất cả các phần tử trong Collection vào vị trí được chỉ định
 ```java
 ArrayList<String> list = new ArrayList<>();
@@ -87,6 +87,37 @@ list.add("Nam");
 // 4. boolean addAll(int index, Collection c)
 list.addAll(1, dummyList);
 System.out.println(list); // [Lan, Minh, Xuan, Hoa, Nam]
+```
+### 5. void clear()
+Xoá tất cả các phần tử trong danh sách
+```java
+list.add("Lan");
+list.add("Hoa");
+list.add("Nam");
+System.out.println(list); // [Lan, Hoa, Nam]
+// 5. void clear()
+list.clear();
+System.out.println(list); // []
+```
+### 6. Object clone()
+Trả về shallow copy của ArrayList hiện tại.
+```java
+ArrayList<String> dummyList = new ArrayList<>(Arrays.asList("Minh", "Xuan"));
+ArrayList<String> listClone = new ArrayList<>(dummyList.size());
+// 6. Object clone()
+listClone = (ArrayList<String>) dummyList.clone();
+System.out.println(listClone); // [Minh, Xuan]
+```
+### 7. boolean contains(Object o)
+Trả về **true** nếu như danh sách có chứa phần từ bằng với object o. Chính xác hơn, nó sẽ trả về true nếu và chỉ nếu danh sách có chứa ít nhất 1 phần tử e mà nó thỏa mãn biểu thức ```(o == null? e == null : o.equals(e))```.
+```java
+ArrayList<String> list = new ArrayList<>();
+list.add("Lan");
+list.add("Hoa");
+list.add("Nam");
+// 7.boolean contains(Object o)
+list.contains("Darkness"); // false
+list.contains("Hoa"); // true
 ```
 
 
