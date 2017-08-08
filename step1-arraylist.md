@@ -182,7 +182,7 @@ arraylistobject.add(new Integer(23));
 ```
 
 #### Type-Safety
-- **Array**: Array là một cấu trúc dữ liệu đồng nhất do đó nó sẽ chứa một đối tượng cụ thể hoặc một kiểu dữ liệu nguyên thuỷ cụ thể. Nếu bạn cố gắn lưu trữ kiểu dữ liệu khác nhau thì nó sẽ ném ra **ArrayStoreException**. Vậy **Array** không sử dụng **Generics**.
+- **Array**: Array là một cấu trúc dữ liệu đồng nhất do đó nó sẽ chứa một đối tượng cụ thể hoặc một kiểu dữ liệu nguyên thuỷ cụ thể. Nếu bạn cố gắn lưu trữ kiểu dữ liệu khác nhau thì nó sẽ ném ra **ArrayStoreException**.
 
 ```java
 String temp[] =  new String[2];  // creates a string array of size 2
