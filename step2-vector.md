@@ -90,11 +90,19 @@ Xóa bỏ phần từ tại vị trí **index** trong danh sách.
 Đây chỉ là những method cơ bản của Vector để biết thêm truy cập [docs](http://docs.oracle.com/javase/8/docs/api/java/util/Vector.html)
 
 ## So sánh Vector và ArrayList
-### 1.Những điểm khác biệt giữa **Vector** và **ArrayList**
+### 1. Những điểm khác biệt giữa **Vector** và **ArrayList**
 #### Synchronization
 Vector **hỗ trợ synchronization** còn ArrayList thì không. Điều này có nghĩa là tại một thời điểm chỉ có một thread có thể truy cập và thực thi Vector trong khi đó ArrayList **không hỗ trợ synchronization** thì nhiều thread có thể hoạt động trên một ArrayList cùng một lúc.
 ### Performance
 Về hiệu năng thì ArrayList nhanh hơn Vector vì ArrayList không hỗ trợ synchronization.
 ### Resize
 ArrayList và Vector đều có thể tăng lên hoặc co lại kích thước để duy trì sự tối ưu bộ nhớ. Nhưng cách thay đổi kích thước là khác nhau ArrayList gia tăng 50% kích thước mảng khi thực hiện **resize** còn Vector con số đó là 100%.
+## References
+[1. http://docs.oracle.com/javase/8/docs/api/java/util/Vector.html](http://docs.oracle.com/javase/8/docs/api/java/util/Vector.html)
+
+[2. http://www.geeksforgeeks.org/java-util-vector-class-java/](http://www.geeksforgeeks.org/java-util-vector-class-java/)
+
+[3. http://www.geeksforgeeks.org/vector-vs-arraylist-java/](http://www.geeksforgeeks.org/vector-vs-arraylist-java/)
+
+[4. https://www.tutorialspoint.com/java/util/java_util_vector.htm](https://www.tutorialspoint.com/java/util/java_util_vector.htm)
 
