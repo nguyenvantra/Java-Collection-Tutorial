@@ -189,7 +189,7 @@ String temp[] =  new String[2];  // creates a string array of size 2
 temp[0] = new Integer(12); // throws ArrayStoreException, trying to add Integer object in String[] 
 ```
 
-- **ArrayList**: Sử dụng **Generics** để đảm bảo kiểu dự liệu an toàn.
+- **ArrayList**: Sử dụng **Generics** để đảm bảo kiểu dữ liệu an toàn.
 
 #### Multi-dimensional
 - **Array**: cho phép.
