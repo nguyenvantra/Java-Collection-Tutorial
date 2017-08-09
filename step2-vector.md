@@ -88,3 +88,8 @@ System.out.println(v.get(0)); // Alo
 Xóa bỏ phần từ tại vị trí **index** trong danh sách.
 
 Đây chỉ là những method cơ bản của Vector để biết thêm truy cập [docs](http://docs.oracle.com/javase/8/docs/api/java/util/Vector.html)
+
+## So sánh Vector và ArrayList
+### 1.Những điểm khác biệt giữa **Vector** và **ArrayList**
+#### Synchronization
+
