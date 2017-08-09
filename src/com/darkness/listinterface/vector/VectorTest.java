@@ -17,5 +17,18 @@ public class VectorTest {
 		// 4.Vector(Collection c)
 		Vector dummyList = new Vector(Arrays.asList("Alo", 12, "Darkness"));
 		Vector list4 = new Vector(dummyList);
+		
+		
+		/**
+		 * Method in Vector
+		 */
+		Vector v = new Vector();
+		
+		// 1. boolean add(Object obj)
+        v.add("Alo");
+        v.add(2);
+        v.add("Darkness");
+        
+        System.out.println(v);
 	}
 }

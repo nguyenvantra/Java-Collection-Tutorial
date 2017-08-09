@@ -30,3 +30,61 @@ Vector list3 = new Vector(20, 10);
 Vector dummyList = new Vector(Arrays.asList("Alo", 12, "Darkness"));
 Vector list4 = new Vector(dummyList);
 ```
+## Method cơ bản trong Vector
+Nhìn chung các method trong Vector tương tự như trong ArrayList. Dưới đây là một số method cơ bản của Vector.
+### 1. boolean add(Object obj)
+Thêm phần tử được chỉ định vào cuối danh sách
+```java
+Vector v = new Vector();
+		
+v.add("Alo");
+v.add(2);
+v.add("Darkness");
+
+System.out.println(v); //[Alo, 2, Darkness]
+```
+### 2. void add(int index, Object obj)
+Thêm phần tử chỉ định vào vị trí được chỉ định trong danh sách
+### 3. boolean addAll(Collection c)
+Thêm tất cả các phần tử trong Collection vào cuối danh sách
+```java
+ArrayList arr = new ArrayList();
+arr.add("Alo");
+arr.add(2);
+arr.add("Darkness");
+    
+Vector v = new Vector();
+v.addAll(arr);
+
+System.out.println(v); //[Alo, 2, Darkness]
+```
+### 4. boolean addAll(int index, Collection c)
+Thêm tất cả các phần tử trong Collection vào vị trí được chỉ định
+### 5. void clear()
+Xoá tất cả các phần tử trong danh sách
+```java
+Vector v = new Vector();
+		
+v.add("Alo");
+v.add(2);
+v.add("Darkness");
+
+System.out.println(v); //[Alo, 2, Darkness]
+v.clear();
+System.out.println(v); //[]
+```
+### 6. Object get(int index)
+Trả về phần tử ở vị trí **index** trong danh sách.
+```java
+Vector v = new Vector();
+		
+v.add("Alo");
+v.add(2);
+v.add("Darkness");
+
+System.out.println(v.get(0)); // Alo
+```
+### 7. boolean remove(int index)
+Xóa bỏ phần từ tại vị trí **index** trong danh sách.
+
+Đây chỉ là những method cơ bản của Vector để biết thêm truy cập [docs](http://docs.oracle.com/javase/8/docs/api/java/util/Vector.html)
