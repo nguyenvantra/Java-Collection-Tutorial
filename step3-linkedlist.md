@@ -1,5 +1,5 @@
 # LinkedList
-LinkedList kế thừa **AbstractSequentialList class** và implements **List interface**. Cung cấp một cấu trúc dữ liệu **linked-list** (dạng danh sách được liên kết).
+LinkedList kế thừa **AbstractSequentialList class** và implements **List interface** và **Queue interface**. Cung cấp một cấu trúc dữ liệu **linked-list** (dạng danh sách được liên kết).
 ## LinkedList class declaration
 Constructor | Description
 ------------ | -------------
@@ -89,3 +89,9 @@ list.size(); // 2
 Xoá bỏ tất cả các phần tử trong danh sách.
 
 Đây chỉ là những method cơ bản của LinkedList để biết thêm truy cập [docs](https://docs.oracle.com/javase/7/docs/api/java/util/LinkedList.html)
+
+## Sự khác biệt LinkedList và ArrayList
+### Data Structure
+- **LinkedList**: Cấu trúc dữ liệu của LinkedList bao gồm các **node**, tuy nhiên LinkedList chỉ lưu địa chỉ của node đầu tiên **(head)** và node cuối cùng **(tail)**. Head sẽ được 1 liên kết null chỉ đến và 1 liên kết chỉ đến các node tiếp theo. Các node tiếp theo cũng sẽ có 1 liên kết chỉ đến node kề trước và node tiếp theo, cứ như vậy đến tail. Tail cũng sẽ có 1 liên kết chỉ đến node kề phía trước và 1 liên kết chỉ đến null (để xác định node cuối cùng).
+
+
