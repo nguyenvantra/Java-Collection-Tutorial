@@ -61,6 +61,10 @@ list.push(2);
 System.out.println("Searching 'code' in stack: "+list.search("Alo")); // 2
 System.out.println("Searching 'code' in stack: "+list.search("Darkness")); // -1
 ```
+## References
+[1. http://docs.oracle.com/javase/8/docs/api/java/util/Stack.html](http://docs.oracle.com/javase/8/docs/api/java/util/Stack.html)
+
+[2. http://www.geeksforgeeks.org/stack-class-in-java/](http://www.geeksforgeeks.org/stack-class-in-java/)
 
 
 
