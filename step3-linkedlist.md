@@ -100,5 +100,23 @@ Xoá bỏ tất cả các phần tử trong danh sách.
 
 <img src="image/arraylist.png"/>
 
+### Insert, Remove element
+- **LinkedList**: Vì cấu trúc dữ liệu của LinkedList bao gồm các **node**. Khi insert hoặc remove một phần tử chỉ việc thay đổi các con trỏ kề trước và sau. Không thực hiện quá trình **resize** như arrayList. Nên tốc độ **Insert, Remove** nhanh hơn ArrayList. Độ phức tạp là O(1).
+- **ArrayList**: Khi insert hoặc remove một phần tử ArrayList phải thực hiên quá trình **resize**(copy toàn bộ các element sang một vùng nhớ khác) nên tốc độ **Insert, Remove** chậm hơn so với LinkedList. Độ phức tạp là O(n).
+### Get, Search element
+- **LinkedList**: Do đặc điểm LinkedList chỉ lưu giá trị của 2 node head và tail, do đó để tìm phần tử thứ n LinkedList phải duyệt qua n-1 phần tử trước đó. Nên tốc độ **Get, Search** chậm hơn ArrayList. Độ phức tạp là O(n).
+- **ArrayList**: Do ArrayList truy vấn dữ liệu dựa trên chỉ số **index**, các phần tử trên ArrayList nằm liên tục trong vùng nhớ. Nên tốc độ **Get, Search** nhanh hơn LinkedList. Độ phức tạp là O(1).
+
+## References
+[1. http://docs.oracle.com/javase/8/docs/api/java/util/LinkedList.html](http://docs.oracle.com/javase/8/docs/api/java/util/LinkedList.html)
+
+[2. http://www.geeksforgeeks.org/arraylist-vs-linkedlist-java/](http://www.geeksforgeeks.org/arraylist-vs-linkedlist-java/)
+
+[3. http://thachleblog.com/phan-biet-linkedlist-va-arraylist/](http://thachleblog.com/phan-biet-linkedlist-va-arraylist/)
+
+[4. https://www.tutorialspoint.com/java/util/java_util_linkedlist.htm](https://www.tutorialspoint.com/java/util/java_util_linkedlist.htm)
+
+
+
 
 
