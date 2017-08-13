@@ -106,6 +106,9 @@ Xoá bỏ tất cả các phần tử trong danh sách.
 ### Get, Search element
 - **LinkedList**: Do đặc điểm LinkedList chỉ lưu giá trị của 2 node head và tail, do đó để tìm phần tử thứ n LinkedList phải duyệt qua n-1 phần tử trước đó. Nên tốc độ **Get, Search** chậm hơn ArrayList. Độ phức tạp là O(n).
 - **ArrayList**: Do ArrayList truy vấn dữ liệu dựa trên chỉ số **index**, các phần tử trên ArrayList nằm liên tục trong vùng nhớ. Nên tốc độ **Get, Search** nhanh hơn LinkedList. Độ phức tạp là O(1).
+### Memory overhead
+- **LinkedList**: có nhiều memory overhead hơn ArrayList(data, địa chỉ của con trỏ next và pre).
+- **ArrayList**: có ít memory overhead hơn LinkedList(chỉ cần index và data).
 
 ## References
 [1. http://docs.oracle.com/javase/8/docs/api/java/util/LinkedList.html](http://docs.oracle.com/javase/8/docs/api/java/util/LinkedList.html)
