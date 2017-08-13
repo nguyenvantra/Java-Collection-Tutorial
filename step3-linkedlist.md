@@ -93,9 +93,12 @@ Xoá bỏ tất cả các phần tử trong danh sách.
 ## Sự khác biệt LinkedList và ArrayList
 ### Data Structure
 - **LinkedList**: Cấu trúc dữ liệu của LinkedList bao gồm các **node**. Nó cung cấp cho chúng ta **double linked-list** trong Java. Tuy nhiên LinkedList chỉ lưu địa chỉ của node đầu tiên **(head)** và node cuối cùng **(tail)**. Head sẽ được 1 liên kết null chỉ đến và 1 liên kết chỉ đến các node tiếp theo. Các node tiếp theo cũng sẽ có 1 liên kết chỉ đến node kề trước và node tiếp theo, cứ như vậy đến tail. **Tail** cũng sẽ có 1 liên kết chỉ đến node kề phía trước và 1 liên kết chỉ đến null (để xác định node cuối cùng). Các node này sẽ chiếm giữ các ô nhớ không liên tục trên bộ nhớ.
-<img src="image/linkedlist.png" width="300"/>
+
+<img src="image/linkedlist.png"/>
+
 - **ArrayList**: Cấu trúc lưu trữ của ArrayList là gồm các phần tử chiếm giữ các địa chỉ liên tục trong bộ nhớ. Nó cung cấp cho chúng ta **dynamic arrays** trong Java.
-<img src="image/arraylist.png" width="300"/>
+
+<img src="image/arraylist.png"/>
 
 
 
