@@ -4,4 +4,5 @@ HashSet là một phần trong **Java Collection Framework** và thuộc package
 - HashSet kế thừa **AbstractSet class** và implements **Set interface**.
 - Data structure của HashSet là **HashTable**.
 - Không cho phép **duplicate value** và chấp nhận **null value**.
-
+- Đối tượng bạn chèn vào HashSet không đảm bảo được chèn vào theo thứ tự. Mà được chèn dựa trên **hash code** của chúng.
+- HashSet còn implements **Searlizable** và **Cloneable interfaces**.
