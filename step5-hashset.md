@@ -32,6 +32,7 @@ HashSet list4 = new HashSet(20, 0.9f);
 ```
 
 ## Initial capacity và load factor là gì?
+update...
 ## Method cơ bản trong HashSet
 ### 1. boolean add(Object o)
 Thêm phần tử được chỉ định vào trong HashSet nếu phần tử đã tồn tại trong HashSet thì trả về false
@@ -78,3 +79,7 @@ Iterating over list:
 South Africa
 India
 ```
+## References
+[1. http://docs.oracle.com/javase/8/docs/api/java/util/HashSet.html](http://docs.oracle.com/javase/8/docs/api/java/util/HashSet.html)
+
+[2. http://www.geeksforgeeks.org/hashset-in-java/](http://www.geeksforgeeks.org/hashset-in-java/)
