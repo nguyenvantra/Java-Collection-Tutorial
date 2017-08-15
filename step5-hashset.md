@@ -31,4 +31,50 @@ HashSet list3 = new HashSet(30);
 HashSet list4 = new HashSet(20, 0.9f);
 ```
 
+## Initial capacity và load factor là gì?
 ## Method cơ bản trong HashSet
+### 1. boolean add(Object o)
+Thêm phần tử được chỉ định vào trong HashSet nếu phần tử đã tồn tại trong HashSet thì trả về false
+### 2. void clear()
+Remove tất cả phần tử trong HashSet
+### 3. boolean contains(Object o)
+Trả về **true** nếu HashSet chứa phần tử được chỉ định
+### 4. boolean remove(Object o)
+Gỡ bỏ phần tử được chỉ định nếu phần tử tồn tại trong HashSet
+### 5. Iterator iterator()
+Trả về một **iterator**
+### 6. int size()
+Trả về số phần tử có trong HashSet
+
+Example:
+```java
+HashSet<String> h = new HashSet<String>();
+ 
+// adding into HashSet
+h.add("India");
+h.add("Australia");
+h.add("South Africa");
+h.add("India");// adding duplicate elements
+ 
+// printing HashSet
+System.out.println(h);
+System.out.println("List contains India or not:" + h.contains("India"));
+ 
+// Removing an item
+h.remove("Australia");
+System.out.println("List after removing Australia:"+h);
+ 
+// Iterating over hash set items
+System.out.println("Iterating over list:");
+Iterator<String> i = h.iterator();
+while (i.hasNext()) System.out.println(i.next());
+```
+Output of the above program:
+```
+[Australia, South Africa, India]
+List contains India or not:true
+List after removing Australia:[South Africa, India]
+Iterating over list:
+South Africa
+India
+```
