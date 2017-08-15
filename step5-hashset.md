@@ -47,7 +47,7 @@ Trả về một **iterator**
 ### 6. int size()
 Trả về số phần tử có trong HashSet
 
-Đây chỉ là những method cơ bản của Vector để biết thêm truy cập [docs](http://docs.oracle.com/javase/8/docs/api/java/util/HashSet.html)
+Đây chỉ là những method cơ bản của HashSet để biết thêm truy cập [docs](http://docs.oracle.com/javase/8/docs/api/java/util/HashSet.html)
 
 Example:
 ```java
