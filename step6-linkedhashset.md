@@ -44,3 +44,10 @@ Trả về số phần tử có trong LinkedHashSet
 
 Đây chỉ là những method cơ bản của LinkedHashSet để biết thêm truy cập [docs](http://docs.oracle.com/javase/8/docs/api/java/util/LinkedHashSet.html)
 
+## References
+[1. http://docs.oracle.com/javase/8/docs/api/java/util/LinkedHashSet.html](http://docs.oracle.com/javase/8/docs/api/java/util/LinkedHashSet.html)
+
+[2. http://www.geeksforgeeks.org/linkedhashset-class-in-java-with-examples/](http://www.geeksforgeeks.org/linkedhashset-class-in-java-with-examples/)
+
+[3. https://www.javatpoint.com/java-linkedhashset](https://www.javatpoint.com/java-linkedhashset)
+
