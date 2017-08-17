@@ -27,4 +27,20 @@ LinkedHashSet list3 = new LinkedHashSet(30);
 // 4.LinkedHashSet(int initialCapacity, float loadFactor)
 LinkedHashSet list4 = new LinkedHashSet(20, 0.9f);
 ```
+## Method cơ bản trong LinkedHashSet
+LinkedHashSet extends từ HashSet nên kế thừa method từ HashSet. Một số method cơ bản của LinkedHashSet. 
+### 1. boolean add(Object o)
+Thêm phần tử được chỉ định vào trong LinkedHashSet nếu phần tử đã tồn tại trong LinkedHashSet thì trả về false
+### 2. void clear()
+Remove tất cả phần tử trong LinkedHashSet
+### 3. boolean contains(Object o)
+Trả về **true** nếu LinkedHashSet chứa phần tử được chỉ định
+### 4. boolean remove(Object o)
+Gỡ bỏ phần tử được chỉ định nếu phần tử tồn tại trong LinkedHashSet
+### 5. Iterator iterator()
+Trả về một **iterator**
+### 6. int size()
+Trả về số phần tử có trong LinkedHashSet
+
+Đây chỉ là những method cơ bản của LinkedHashSet để biết thêm truy cập [docs](http://docs.oracle.com/javase/8/docs/api/java/util/LinkedHashSet.html)
 
