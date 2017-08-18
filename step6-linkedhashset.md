@@ -1,5 +1,5 @@
 # LinkedHashSet
-LinkedHashSet là một **HashTable** và **LinkedList**. Nó extends **HashSet** và implements **Set interface**.
+LinkedHashSet là sự kết hợp giữa **HashTable** và **LinkedList**. Nó extends **HashSet** và implements **Set interface**.
 ## Những điểm quan trong trong LinkedHastSet
 - Không cho phép **duplicate value** và chấp nhận **null value**.
 - Duy trì thứ tự chèn các phần tử.
